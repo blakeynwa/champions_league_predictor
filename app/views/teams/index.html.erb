@@ -1,0 +1,97 @@
+<h1>All of the Teams</h1>
+
+<h2>Pot One</h2>
+<ol>
+<% @pots_storage[:pot_one].each do |team| %>
+  <li><%= team.name %>, <strong><%= team.league.name %></strong></li>
+<% end %>
+</ol>
+
+<h2>Pot Two</h2>
+<ol>
+<% @pots_storage[:pot_two].each do |team| %>
+  <li><%= team.name %>, <strong><%= team.league.name %></strong></li>
+<% end %>
+</ol>
+
+<h2>Pot Three</h2>
+<ol>
+<% @pots_storage[:pot_three].each do |team| %>
+  <li><%= team.name %>, <strong><%= team.league.name %></strong></li>
+<% end %>
+</ol>
+
+<h2>Pot Four</h2>
+<ol>
+<% @pots_storage[:pot_four].each do |team| %>
+  <li><%= team.name %>, <strong><%= team.league.name %></strong></li>
+<% end %>
+</ol>
+
+
+<h2>The Draw</h2>
+
+<h2>Group A</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group B</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group C</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group D</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group E</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group F</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group G</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
+<h2>Group H</h2>
+<ol>
+  <li><%= @names_one.delete_at(rand(@names_one.length)) %></li>
+  <li><%= @names_two.delete_at(rand(@names_two.length)) %></li>
+  <li><%= @names_three.delete_at(rand(@names_three.length)) %></li>
+  <li><%= @names_four.delete_at(rand(@names_four.length)) %></li>
+</ol>
+
