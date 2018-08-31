@@ -1,18 +1,18 @@
-leagues = League.create!([{ name: 'English Premier League' }, 
-                         { name: 'Serie A' }, 
-                         { name: 'La Liga' }, 
-                         { name: 'Ligue 1' }, 
-                         { name: 'Bundesliga' }, 
-                         { name: 'Eredivisie' },
-                         { name: 'Russian Premier League' },
-                         { name: 'Primeira Liga' },
-                         { name: 'Ukranian Premier League' },
-                         { name: 'Superleague Greece' },
-                         { name: 'Belgian First Division A' },
-                         { name: 'Super Lig' },
-                         { name: 'Serbian SuperLiga' },
-                         { name: 'Czech First League' },
-                         { name: 'Swiss Super League' }])
+# leagues = League.create!([{ name: 'English Premier League' }, 
+#                          { name: 'Serie A' }, 
+#                          { name: 'La Liga' }, 
+#                          { name: 'Ligue 1' }, 
+#                          { name: 'Bundesliga' }, 
+#                          { name: 'Eredivisie' },
+#                          { name: 'Russian Premier League' },
+#                          { name: 'Primeira Liga' },
+#                          { name: 'Ukranian Premier League' },
+#                          { name: 'Superleague Greece' },
+#                          { name: 'Belgian First Division A' },
+#                          { name: 'Super Lig' },
+#                          { name: 'Serbian SuperLiga' },
+#                          { name: 'Czech First League' },
+#                          { name: 'Swiss Super League' }])
 
 real_madrid = Team.create! name: 'Real Madrid', pot: 1, league_id: League.find_by(name: "La Liga").id
 atletic_madrid = Team.create! name: 'Atletico Madrid', pot: 1, league_id: League.find_by(name: "La Liga").id
@@ -46,6 +46,8 @@ inter_milan = Team.create! name: 'Inter Milan', pot: 4, league_id: League.find_b
 red_star_belgrade = Team.create! name: 'Red Star Belgrade', pot: 4, league_id: League.find_by(name: "Serbian SuperLiga").id 
 viktoria_plzen = Team.create! name: 'Viktoria Plzen', pot: 4, league_id: League.find_by(name: "Czech First League").id 
 young_boys = Team.create! name: 'Young Boys', pot: 4, league_id: League.find_by(name: "Swiss Super League").id
+
+
 
 
 
